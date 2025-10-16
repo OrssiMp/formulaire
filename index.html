@@ -51,17 +51,17 @@
 </head>
 
 <body class="h-screen grid place-items-center bg-gray-100">
-    <form action="" class="container shadow-lg  p-6 gap-3 rounded-sm">
+    <form https://formspree.io/f/{form_id} method="post" class="container shadow-lg  p-6 gap-3 rounded-sm">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="nom" class="font-bold">Nom</label>
-                    <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" class="mb-4"
+                    <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" class="mb-4" name="nom"
                         minlength="3">
                     <p class="message-input">veuillez bien remplir tout les champs, pour le nom au moins trois caractère
                         svp</p>
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Entrez votre email" class="mb-4">
+                    <input type="email" class="form-control" id="email" placeholder="Entrez votre email" name ="email" class="mb-4">
                     <p class="message-input">veuillez bien remplir tout les champs, respecter le format conventionnelle
                     </p>
                 </div>
@@ -69,7 +69,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="prenom">Telephone</label>
-                    <input type="tel" class="form-control" id="prenom" placeholder="Entrez votre numéro de téléphone"
+                    <input type="tel" class="form-control" id="prenom" placeholder="Entrez votre numéro de téléphone" name="prenom"
                         required minlength="9" class="mb-4">
                     <p class="message-input">veuillez bien remplir tout les champs, plus de 9 chiffres</p>
 
