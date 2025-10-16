@@ -39,87 +39,27 @@
             color: var(--bs-success);
         }
 
-        p.message-input {
-            display: none;
-        }
-
-        input:invalid:not(:placeholder-shown)+p.message-input {
-            display: flex;
-            color: var(--bs-danger);
-        }
+        
     </style>
 </head>
+<body class="grid place-items-center  bg-light">
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xanpvedb"
+  method="POST" class="container" bg-blue-100 flex flex-col 
+>
+  <label>
+    Your email:
+    <input type="email" name="email" class="form-control">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message" class="form-control"></textarea>
 
-<body class="h-screen grid place-items-center bg-gray-100">
-    <form action="" class="container shadow-lg  p-6 gap-3 rounded-sm">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="nom" class="font-bold">Nom</label>
-                    <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" class="mb-4"
-                        minlength="3">
-                    <p class="message-input">veuillez bien remplir tout les champs, pour le nom au moins trois caractère
-                        svp</p>
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Entrez votre email" class="mb-4">
-                    <p class="message-input">veuillez bien remplir tout les champs, respecter le format conventionnelle
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="prenom">Telephone</label>
-                    <input type="tel" class="form-control" id="prenom" placeholder="Entrez votre numéro de téléphone"
-                        required minlength="9" class="mb-4">
-                    <p class="message-input">veuillez bien remplir tout les champs, plus de 9 chiffres</p>
-
-                    <select name="select" id="select" class="form-control my-4">
-                        <option value="">Selectionnez une option</option>
-                        <option value="1">Congo Brazzaville</option>
-                        <option value="2">France</option>
-                        <option value="3">USA</option>
-                    </select>
-                </div>
-
-            </div>
-            <div class="container my-2 ">
-                <textarea name="" id="" class="border w-full p-4 resize-none form-control"></textarea>
-
-            </div>
-        </div>
-        <div class=" navbar">
-            <div classs="col-md-6">
-                <div class="form-group">
-                    <label for="homme">
-                        <input type="radio" name="radio" id="homme">
-                        Homme
-                    </label>
-                    <label for="femme">
-                        <input type="radio" name="radio" id="femme">
-                        Femme
-                    </label>
-                    <label for="autre">
-                        <input type="radio" name="radio" id="autre">Autre
-                    </label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="check">
-                        <input type="checkbox" name="check" id="check">
-                        j'ai lu et accepté les <span class="text-underline text-purple-700">termes </span>et
-                        <span class="text-underline text-purple-700">tconditions </span>
-                    </label>
-
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="cta navbar gap-3">
-            <input type="submit" value="envoyer" class="btn btn-secondary w-full">
-            <button type="submit" class="btn btn-primary w-full">Reinitialiser</button>
-        </div>
-    </form>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
 </body>
 
 </html>
